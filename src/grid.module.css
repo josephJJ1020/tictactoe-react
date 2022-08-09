@@ -1,0 +1,45 @@
+.gridContainer {
+    z-index: 1;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 500px;
+    width: 90vw;
+    height: 90vw;
+    background-color: white;
+    position: relative;
+}
+
+.tile {
+    max-width: calc(500px / 3);
+    max-height: calc(500px / 3);
+    width: 30vw;
+    height: 30vw;
+    border: 1px solid black ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.tile:hover {
+    background: whitesmoke;
+}
+
+.currentplayer {
+    position: absolute;
+    color: white;
+    top: -2.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    height: 2rem;
+}
+
+.currentplayer h1 {
+    font-size: 2rem;
+}

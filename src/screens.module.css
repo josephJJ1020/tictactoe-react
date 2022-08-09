@@ -1,0 +1,161 @@
+/* Homepage */
+.homepage {
+    flex-direction: column;
+    color: white;
+    gap: 50px;
+    z-index: 4;
+}
+
+.homepage h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(45deg, yellow, orange, darkviolet);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Player select page */
+
+.selectpage {
+    color: white;
+    justify-content: space-evenly;
+    z-index: 3;
+    max-width: 100%;
+}
+
+.selectpage input {
+    text-align: center;
+    width: 50px;
+    height: 100px;
+    font-size: 2rem;
+}
+
+.selectpage input:active {
+    outline: none;
+}
+
+.selectpage .selectbutton {
+    text-align: center;
+    width: 50px;
+    height: 100px;
+    font-size: 2rem;
+    margin: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.selectpage .selectbutton:hover {
+    color: black;
+}
+
+.selectpage .selectmode {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.selectmodecontainer hr {
+    width: 100px;
+}
+
+/* animation */
+/*
+#o:focus ~ hr  {
+    margin-left: 65px;
+}
+*/
+.active {
+    background-color: gray !important;
+    color: white;
+}
+
+.active:hover {
+    color: white !important; 
+}
+.activebar {
+    margin-left: 65px;
+}
+
+/* activebar below is for playermode select */
+.activebar1 {
+    margin-left: 115px;
+}
+
+.activebar2 {
+    margin-left: 225px;
+}
+
+hr {
+    margin-left: 5px;
+    width: 50px;
+    transition: all .5s;
+}
+
+.start {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+
+/* Result page */
+
+.resultpage {
+    background: rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 500px;
+    width: 90vw;
+    height: 90vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.results button {
+    background-color: gray;
+}
+
+.results button:hover {
+    background-color: darkgray;
+}
+
+.results h1 {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 420px){
+    .selectpage {
+        flex-direction: column;
+    }
+
+    .selectpage .selectmode {
+        font-size: 0.8rem;
+        width: 75px;
+        height: 75px;
+    }
+
+    .selectmodecontainer hr {
+        width: 75px;
+    }
+
+    .activebar1 {
+        margin-left: 90px;
+    }
+    
+    .activebar2 {
+        margin-left: 175px;
+    }
+
+    hr {
+        width: calc((75px / 2) + 5);
+    }
+
+}
